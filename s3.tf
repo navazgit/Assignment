@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "webbuck" {
       "Effect":"Allow",
       "Principal": "*",
       "Action":"s3:GetObject",
-      "Resource":["arn:aws:s3:::mybucket-462281/*"
+      "Resource":["arn:aws:s3:::mybucket1-462281/*"
       ]
     }
   ]
