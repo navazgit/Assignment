@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "webbuck" {
 {
   "Version":"2012-10-17",
   "Statement":[{
-    "Sid":"PublicReadForGetBucketObjects",
+    #"Sid":"PublicReadForGetBucketObjects",
         "Effect":"Allow",
       "Principal": "*",
       "Action":"s3:GetObject",
@@ -20,6 +20,6 @@ POLICY
 
   website {
     index_document = "index.html"
-    error_document = "404.html"
+    error_document = "error.html"
   }
 }
