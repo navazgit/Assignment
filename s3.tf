@@ -5,7 +5,8 @@ resource "aws_s3_bucket" "b" {
     tags {
         Name = "mybucket-462281"
     }
-    policy {
+    policy = <<POLICY
+{
             
     "Version": "2012-10-17",
     "Statement": [
@@ -16,13 +17,13 @@ resource "aws_s3_bucket" "b" {
             "Resource": "arn:aws:s3:::mybucket-462281/*" 
         } 
     ] 
-            }
-            
-            website {
+}
+POLICY            
+    website {
     index_document = "index.html"
     error_document = "error.html"
-            }
-            }
+    }
+}
             
             
- 
+  
