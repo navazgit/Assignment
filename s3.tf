@@ -7,8 +7,8 @@ resource "aws_s3_bucket" "webbuck" {
 {
   "Version":"2012-10-17",
   "Statement":[{
-    #"Sid":"PublicReadForGetBucketObjects",
-        "Effect":"Allow",
+    
+      "Effect":"Allow",
       "Principal": "*",
       "Action":"s3:GetObject",
       "Resource":["arn:aws:s3:::mybucket-462281/*"
