@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "webbuck" {
-  provider = "aws.prod"
+  #provider = "aws.prod"
 
   bucket = "mybucket-462281"
   acl = "public-read"
